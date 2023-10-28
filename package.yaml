@@ -1,10 +1,10 @@
 name:                physics-haskell
 version:             0.1.0.0
-github:              "githubuser/physics-haskell"
+github:              "austinletson/physics-haskell"
 license:             BSD-3-Clause
-author:              "Author name here"
-maintainer:          "example@example.com"
-copyright:           "2023 Author name here"
+author:              "Austin Letson"
+maintainer:          "waustinletson@gmail.com"
+copyright:           "2023 Austin Letson"
 
 extra-source-files:
 - README.md
@@ -46,6 +46,9 @@ executables:
     - -with-rtsopts=-N
     dependencies:
     - physics-haskell
+    when:
+    - condition: false
+      other-modules: Paths_physics_haskell
 
 tests:
   physics-haskell-test:
